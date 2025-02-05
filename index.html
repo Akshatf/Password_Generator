@@ -13,8 +13,8 @@
         <div class="display-container">
             <!-- data-password-display is custom attritube by which we can fetch input by queryselector in js  -->
             <input readonly placeholder="Password" data-passwordDisplay>
-            <button>
-                <span data-copyMsg >Copied!</span>
+            <button data-copy>
+                <span data-copyMsg ></span>
                 <img src="./assests/copy.svg" alt="copy" width="23" height="23">
             </button>
         </div>
@@ -22,7 +22,7 @@
         <div class="input-container">
             <div class="length-container">
                 <p>Password Length</p>
-                <p data-lengthNumber>10</p>
+                <p data-lengthNumber>0</p>
             </div>
             <!-- slider  -->
             <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
@@ -53,11 +53,6 @@
 
              <button class="generateButton" >Generate Password</button>
         </div>
-
-
-
-
-        
 
     </div>
     <script src="script.js"></script>
